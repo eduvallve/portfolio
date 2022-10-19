@@ -25,9 +25,11 @@ body {
   }
 }
 .header .menu-item a {
-  color: white;
   text-decoration: none;
   font-family: "Raleway";
+}
+.page__index .header .menu-item a {
+  color: white;
 }
 
 section {

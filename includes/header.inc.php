@@ -7,13 +7,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link defer rel="shortcut icon" href="<?php echo $uri.'/htdocs/'; ?>favicon.ico" type="image/png" />
 <link defer rel="stylesheet" href="<?php echo $uri.'/htdocs/common/'; ?>style.css">
-<style><?php
+<?php
 if ($pageComponents) {
     $pageComp = array_unique($pageComponents);
     foreach ($pageComp as $component) {
-        include 'htdocs/components/'.$component.'/'.$component.'.css';
+        ?>
+        <link defer rel="stylesheet" href="<?php echo $uri.'/htdocs/components/'.$component.'/'.$component.'.css'; ?>">
+        <?php
     }
 }
-?></style>
+?>
 </head>
-<body onclick="void(0);">
+<body onclick="void(0);" class="page__<?php echo $pageInclude; ?>">

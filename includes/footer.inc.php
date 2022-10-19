@@ -1,10 +1,12 @@
-<script><?php
+<?php
 if ($pageComponents) {
     $pageComp = array_unique($pageComponents);
     foreach ($pageComp as $component) {
-        include 'htdocs/components/'.$component.'/'.$component.'.js';
+        ?>
+        <script src="<?php echo $uri.'/htdocs/components/'.$component.'/'.$component.'.js'; ?>"></script>
+        <?php
     }
 }
-?></script>
+?>
 </body>
 </html>
