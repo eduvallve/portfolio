@@ -7,7 +7,8 @@
 <link defer rel="stylesheet" href="<?php echo $uri.'/htdocs/common/'; ?>style.css">
 <style><?php
 if ($pageComponents) {
-    foreach ($pageComponents as $component) {
+    $pageComp = array_unique($pageComponents);
+    foreach ($pageComp as $component) {
         include 'htdocs/components/'.$component.'/'.$component.'.css';
     }
 }
