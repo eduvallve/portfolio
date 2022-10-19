@@ -22,22 +22,50 @@
 .brief__role--basic {
   text-align: right;
 }
+@media screen and (max-width: 767px) {
+  .brief__role--basic {
+    margin-bottom: 0;
+  }
+}
 .brief__role--basic, .brief__role--list {
   display: inline-block;
   vertical-align: middle;
   font-weight: 700;
-  width: 48%;
+}
+@media screen and (min-width: 768px) {
+  .brief__role--basic, .brief__role--list {
+    width: 48%;
+  }
 }
 .brief__role--list {
-  padding-left: 1em;
+  padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .brief__role--list {
+    padding-left: 1em;
+  }
 }
 .brief__role--basic, .brief__role--item {
   font-size: 60px;
+}
+@media screen and (max-width: 767px) {
+  .brief__role--basic, .brief__role--item {
+    text-align: center;
+    font-size: 11vw;
+    display: block;
+  }
 }
 .brief__role--item {
   list-style: none;
   text-align: left;
   animation: slideInUp ease-in-out 3s;
+}
+@media screen and (max-width: 767px) {
+  .brief__role--item {
+    width: 100%;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
 }
 .brief__description {
   font-family: "Libre Baskerville", serif;

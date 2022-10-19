@@ -1,4 +1,3 @@
-<!-- <h1>PHP Single page website example 1</h1> -->
 <header class="header">
 	<ul class="menu">
 		<li class="menu-item"><a href="<?=$uri ?>/">Index</a></li>
@@ -7,4 +6,3 @@
 		<li class="menu-item"><a href="<?=$uri ?>/contact.php">Contact</a></li>
 	</ul>
 </header>
-<!-- <div id="content"> -->

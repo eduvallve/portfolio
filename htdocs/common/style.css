@@ -14,10 +14,15 @@ body {
 .header .menu {
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
 }
 .header .menu-item {
-  padding: 1em 2em;
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .header .menu-item {
+    padding: 1em 2em;
+  }
 }
 .header .menu-item a {
   color: white;

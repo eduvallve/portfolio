@@ -1,4 +1,3 @@
-<!-- </div> -->
 <script><?php
 if ($pageComponents) {
     $pageComp = array_unique($pageComponents);

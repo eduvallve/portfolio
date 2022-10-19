@@ -15,11 +15,15 @@ body {
     .menu {
         display: flex;
         justify-content: space-evenly;
+        padding: 0;
         
         &-item {
-            padding: 1em 2em;
             list-style: none;
             
+            @media screen and (min-width:768px){
+                padding: 1em 2em;
+            }
+
             a {
                 color: white;
                 text-decoration: none;
