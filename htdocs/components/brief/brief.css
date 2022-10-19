@@ -1,9 +1,9 @@
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Raleway:wght@400;600&display=swap");
-
+/* Variables */
+/* --- Sizes */
+/* --- Colors */
 .brief {
   display: flex;
-  background-color: #000021;
+  background-color: rgb(0, 0, 33);
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -111,3 +111,5 @@
     transform: rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=brief.css.map */
