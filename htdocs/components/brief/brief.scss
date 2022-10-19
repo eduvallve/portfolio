@@ -1,0 +1,144 @@
+/* Variables */
+/* --- Sizes */
+$sunSize: 20vh;
+
+/* --- Colors */
+$white: #ffffff;
+$white-transparent-six: rgba(255, 255, 255, 0.6);
+$dark-blue: rgba(0, 0, 33, 1);
+$electric-blue: rgba(31, 94, 148, 1);
+
+.brief {
+    display: flex;
+    background-color: $dark-blue;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    transition: background 1s ease;
+
+    &__main {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        z-index: 1;
+    }
+
+    &__name {
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__role {
+        &--basic {
+            text-align: right;
+        }
+
+        &--basic,
+        &--list {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 700;
+            width: 48%;
+        }
+
+        &--list {
+            padding-left: 1em;
+        }
+
+        &--basic,
+        &--item {
+            font-size: 60px;
+        }
+
+        &--item {
+            list-style: none;
+            text-align: left;
+            animation: slideInUp ease-in-out 3s;
+        }
+    }
+
+    &__description {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: $white-transparent-six;
+
+        &--experience {
+            border-bottom: $white-transparent-six 3px solid;
+            padding-bottom: 10px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+    }
+
+    &__animation {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        &--sun {
+            width: $sunSize;
+            aspect-ratio: 1 / 1;
+            background-color: yellow;
+            border-radius: $sunSize;
+            position: absolute;
+            left: calc(50% - 10vh);
+            transform: translateY(100vh);
+        }
+
+        &--stars {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: circle infinite 60s linear;
+        }
+
+        &--star {
+            background-color: #000;
+            position: fixed;
+            border-radius: 50%;
+            background-color: rgb(69 94 115 / 90%);
+            transition: opacity 1s ease;
+
+        }
+    }
+}
+
+/* -- Animations -- */
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(0.5em);
+        opacity: 0;
+    }
+
+    33% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    66% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-0.5em);
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

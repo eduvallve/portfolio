@@ -1,0 +1,40 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Raleway:wght@400;600&display=swap");
+
+body {
+	margin: 0;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+	z-index: 1;
+    
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+        
+        &-item {
+            padding: 1em 2em;
+            list-style: none;
+            
+            a {
+                color: white;
+                text-decoration: none;
+                font-family: 'Raleway';
+            }
+        }
+    }
+}
+
+section {
+	height: 100vh;
+}
+
+main {
+	width: 1200px;
+	max-width: 100%;
+	padding: 15px;
+}
