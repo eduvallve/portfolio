@@ -1,5 +1,4 @@
 const FE_ROLES = ["engineer", "problem solver", "creative", "developer"];
-const INITIAL_YEAR = 2016;
 
 class Brief {
   constructor() {
@@ -10,7 +9,6 @@ class Brief {
     this.setRefs();
     this.setListeners();
     this.startAutoDev();
-    this.setDescYears();
   }
 
   setRefs() {
@@ -81,11 +79,6 @@ class Brief {
       feList.appendChild(li);
       i < FE_ROLES.length - 1 ? i++ : (i = 0);
     }, 3000);
-  }
-
-  setDescYears() {
-    const expYears = this.base.querySelector(".brief__description--years");
-    expYears.innerText = new Date().getFullYear() - INITIAL_YEAR;
   }
 
   createSkyDots() {
