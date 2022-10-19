@@ -1,7 +1,8 @@
 <!-- </div> -->
 <script><?php
 if ($pageComponents) {
-    foreach ($pageComponents as $component) {
+    $pageComp = array_unique($pageComponents);
+    foreach ($pageComp as $component) {
         include 'htdocs/components/'.$component.'/'.$component.'.js';
     }
 }
