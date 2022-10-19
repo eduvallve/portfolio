@@ -7,7 +7,7 @@
         <li class="brief__role--item">developer</li>
       </ul>
     </div>
-    <span class="brief__description">I am a developer based in Spain, with <span class="brief__description--experience"><span class="brief__description--years"></span> years of experience</span></span>
+    <span class="brief__description">I am a developer based in Spain, with <span class="brief__description--experience"><span class="brief__description--years"><?php echo (intval(date("Y")) - 2016); ?></span> years of experience</span></span>
   </main>
   <div class="brief__animation">
     <div class="brief__animation--sun"></div>
