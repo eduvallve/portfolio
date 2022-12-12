@@ -49,7 +49,7 @@ class Brief {
       this.base.style.backgroundColor = electricBlue;
     }
   }
-  
+
   toggleStars() {
     let scroll = window.pageYOffset;
     let windowHeight = window.innerHeight;
@@ -59,7 +59,6 @@ class Brief {
     } else if (scroll > sunSize / 20) {
       this.stars.style.opacity = 0;
     }
-      
   }
 
   startAutoDev() {
@@ -86,8 +85,6 @@ class Brief {
     function freshDot() {
       this.obj = document.createElement("div");
       this.obj.classList.add("brief__animation--star");
-      // this.obj.style.top = window.innerHeight * Math.random() + "px";
-      // this.obj.style.left = window.innerWidth * Math.random() + "px";
       this.obj.style.left = `calc(100vw * ${Math.random()})`;
       this.obj.style.top = `calc(100vh * ${Math.random()})`;
       this.size = Math.floor(2 * Math.random()) + 4;
