@@ -5,7 +5,7 @@
         flex-direction: column;
         justify-content: center;
         font-family: 'Raleway';
-        font-size: 16px;
+        font-size: 15px;
     }
 
     &__name {
@@ -13,13 +13,25 @@
         font-size: 18px;
     }
 
+    &__slogan {
+        font-family: 'Libre Baskerville';
+    }
+
     .profilePic {
+        width: 80px;
         max-width: 100%;
+        margin-bottom: var(--col-gap);
     }
 
     .btn {
         display: inline-block;
         margin-bottom: 15px;
+        font-size: 0.9em;
+        margin-right: 10px;
+
+        &:last-of-type {
+            margin-bottom: 25px;
+        }
     }
 
     &__studies {
@@ -29,6 +41,48 @@
             height: 1.25em;
             vertical-align: middle;
             padding-bottom: 10px;
+        }
+    }
+
+    &__focus {
+        margin-top: calc(var(--col-gap) * 2);
+        justify-content: flex-start;
+        position: relative;
+
+        &.cols > .col-3 {
+            width: calc(25% - var(--col-gap));
+
+            &:first-of-type {
+                margin: 0;
+                width: 25%;
+            }
+
+            .basicInformation__focus-tooltip {
+                display: none;
+            }
+
+            &:hover {
+                .basicInformation__focus-tooltip {
+                    display: block;
+                    position: absolute;
+                    width: calc(75% - var(--col-gap));
+                    top: calc(var(--col-gap) * 6);
+                    left: calc(var(--col-gap) * 0.5 + 25%);
+                    font-size: 0.75em;
+                    line-height: 1.45em;
+                    font-family: 'Libre Baskerville';
+                }
+
+                .rounded-tag::after {
+                    content: '';
+                    width: 1px;
+                    height: calc(var(--col-gap) * 2);
+                    background: #ebebeb;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                }
+            }
         }
     }
 }

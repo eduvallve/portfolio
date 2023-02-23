@@ -212,4 +212,19 @@ main {
   color: rgb(31, 94, 148);
 }
 
+.rounded-tag {
+  display: flex;
+  width: 80px;
+  max-width: 100%;
+  min-width: 55px;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Baskerville", serif;
+  border-radius: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1254901961);
+  position: relative;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */

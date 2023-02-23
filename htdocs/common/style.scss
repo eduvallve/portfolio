@@ -128,3 +128,18 @@ main {
 .heart {
     color: $electric-blue;
 }
+
+.rounded-tag {
+    display: flex;
+    width: 80px;
+    max-width: 100%;
+    min-width: 55px;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: "Libre Baskerville", serif;
+    border-radius: 100%;
+    box-shadow: 2px 2px 4px #00000020;
+    position: relative;
+    cursor: pointer;
+}

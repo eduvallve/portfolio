@@ -4,18 +4,28 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Raleway";
-  font-size: 16px;
+  font-size: 15px;
 }
 .basicInformation__name {
   margin-top: 0;
   font-size: 18px;
 }
+.basicInformation__slogan {
+  font-family: "Libre Baskerville";
+}
 .basicInformation .profilePic {
+  width: 80px;
   max-width: 100%;
+  margin-bottom: var(--col-gap);
 }
 .basicInformation .btn {
   display: inline-block;
   margin-bottom: 15px;
+  font-size: 0.9em;
+  margin-right: 10px;
+}
+.basicInformation .btn:last-of-type {
+  margin-bottom: 25px;
 }
 .basicInformation__studies {
   margin-top: 0;
@@ -24,6 +34,40 @@
   height: 1.25em;
   vertical-align: middle;
   padding-bottom: 10px;
+}
+.basicInformation__focus {
+  margin-top: calc(var(--col-gap) * 2);
+  justify-content: flex-start;
+  position: relative;
+}
+.basicInformation__focus.cols > .col-3 {
+  width: calc(25% - var(--col-gap));
+}
+.basicInformation__focus.cols > .col-3:first-of-type {
+  margin: 0;
+  width: 25%;
+}
+.basicInformation__focus.cols > .col-3 .basicInformation__focus-tooltip {
+  display: none;
+}
+.basicInformation__focus.cols > .col-3:hover .basicInformation__focus-tooltip {
+  display: block;
+  position: absolute;
+  width: calc(75% - var(--col-gap));
+  top: calc(var(--col-gap) * 6);
+  left: calc(var(--col-gap) * 0.5 + 25%);
+  font-size: 0.75em;
+  line-height: 1.45em;
+  font-family: "Libre Baskerville";
+}
+.basicInformation__focus.cols > .col-3:hover .rounded-tag::after {
+  content: "";
+  width: 1px;
+  height: calc(var(--col-gap) * 2);
+  background: #ebebeb;
+  position: absolute;
+  top: 100%;
+  left: 50%;
 }
 
 /*# sourceMappingURL=basicInformation.css.map */
