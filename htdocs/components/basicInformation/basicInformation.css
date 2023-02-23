@@ -1,0 +1,29 @@
+.basicInformation__main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+.basicInformation__name {
+  margin-top: 0;
+  font-size: 18px;
+}
+.basicInformation .profilePic {
+  max-width: 100%;
+}
+.basicInformation .btn {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.basicInformation__studies {
+  margin-top: 0;
+}
+.basicInformation__studies.icon::before {
+  height: 1.25em;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=basicInformation.css.map */

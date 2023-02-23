@@ -1,0 +1,27 @@
+@charset "UTF-8";
+// Breakpoints
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 960px;
+$bp-large-desktop: 1200px;
+
+// Mobile
+$bp-mobile-min: $bp-mobile;
+$bp-mobile-max: $bp-tablet - 1;
+$bp-mobile-only: max-width $bp-mobile-max;
+// Tablet
+$bp-tablet-min: $bp-tablet;
+$bp-tablet-max: $bp-desktop - 1;
+$bp-tablet-only: $bp-tablet-min $bp-tablet-max;
+// Desktop
+$bp-desktop-min: $bp-desktop;
+$bp-desktop-max: $bp-large-desktop - 1;
+$bp-desktop-only: $bp-desktop-min $bp-desktop-max;
+// Large Desktop
+$bp-large-desktop-min: $bp-large-desktop;
+
+@mixin breakpoint($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}

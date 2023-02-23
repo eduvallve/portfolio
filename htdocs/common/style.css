@@ -1,5 +1,9 @@
+/* Utils */ /* --- Colors */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Raleway:wght@400;600&display=swap");
+:root {
+  --col-gap: 20px;
+}
 
 body {
   margin: 0;
@@ -42,6 +46,170 @@ main {
   max-width: calc(100vw - 30px);
   padding: 15px;
   margin: auto;
+}
+
+.cols {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.col-1 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-1 {
+    width: calc(8.3333333333% - var(--col-gap));
+  }
+}
+
+.col-2 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-2 {
+    width: calc(16.6666666667% - var(--col-gap));
+  }
+}
+
+.col-3 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-3 {
+    width: calc(25% - var(--col-gap));
+  }
+}
+
+.col-4 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-4 {
+    width: calc(33.3333333333% - var(--col-gap));
+  }
+}
+
+.col-5 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-5 {
+    width: calc(41.6666666667% - var(--col-gap));
+  }
+}
+
+.col-6 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-6 {
+    width: calc(50% - var(--col-gap));
+  }
+}
+
+.col-7 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-7 {
+    width: calc(58.3333333333% - var(--col-gap));
+  }
+}
+
+.col-8 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-8 {
+    width: calc(66.6666666667% - var(--col-gap));
+  }
+}
+
+.col-9 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-9 {
+    width: calc(75% - var(--col-gap));
+  }
+}
+
+.col-10 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-10 {
+    width: calc(83.3333333333% - var(--col-gap));
+  }
+}
+
+.col-11 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-11 {
+    width: calc(91.6666666667% - var(--col-gap));
+  }
+}
+
+.col-12 {
+  margin: 0 calc(var(--col-gap) * 0.5);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-12 {
+    width: calc(100% - var(--col-gap));
+  }
+}
+
+.btn {
+  padding: 6px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.btn__secondary {
+  color: rgb(31, 94, 148);
+  border: 1px solid rgb(31, 94, 148);
+}
+
+.icon::before {
+  content: "";
+  height: 0.85em;
+  display: inline-block;
+  background-size: contain;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+  transform: translateY(1px);
+}
+.icon__linkedin::before {
+  background-image: url(/portfolio/uploads/2023/02/icon_linkedin.svg);
+}
+.icon__resumee::before {
+  background-image: url(/portfolio/uploads/2023/02/icon_document.svg);
+}
+.icon__graduate::before {
+  background-image: url(/portfolio/uploads/2023/02/icon_graduate.svg);
+}
+.icon__master::before {
+  background-image: url(/portfolio/uploads/2023/02/icon_master.svg);
+}
+
+/* Fancy global styles */
+.heart {
+  color: rgb(31, 94, 148);
 }
 
 /*# sourceMappingURL=style.css.map */

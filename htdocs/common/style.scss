@@ -1,5 +1,13 @@
+/* Utils */
+@import '../common/utils/colors';
+@import '../common/utils/breakpoints';
+
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Raleway:wght@400;600&display=swap");
+
+:root {
+    --col-gap : 20px;
+}
 
 body {
 	margin: 0;
@@ -11,15 +19,15 @@ body {
     top: 0;
     left: 0;
 	z-index: 1;
-    
+
     .menu {
         display: flex;
         justify-content: space-evenly;
         padding: 0;
-        
+
         &-item {
             list-style: none;
-            
+
             @media screen and (min-width:768px){
                 padding: 1em 2em;
             }
@@ -45,4 +53,78 @@ main {
 	max-width: calc(100vw - 30px);
 	padding: 15px;
     margin: auto;
+}
+
+.cols {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+@mixin colWidth($n) {
+    margin: 0 calc(var(--col-gap) * 0.5);
+    width: 100%;
+
+    @include breakpoint($bp-tablet-min) {
+        width: calc(100% / 12 * $n - var(--col-gap));
+    }
+}
+
+.col-1 { @include colWidth(1); }
+.col-2 { @include colWidth(2); }
+.col-3 { @include colWidth(3); }
+.col-4 { @include colWidth(4); }
+.col-5 { @include colWidth(5); }
+.col-6 { @include colWidth(6); }
+.col-7 { @include colWidth(7); }
+.col-8 { @include colWidth(8); }
+.col-9 { @include colWidth(9); }
+.col-10 { @include colWidth(10); }
+.col-11 { @include colWidth(11); }
+.col-12 { @include colWidth(12); }
+
+.btn {
+    padding: 6px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+
+    &__secondary {
+        color: $electric-blue;
+        border: 1px solid $electric-blue;
+    }
+}
+
+// Social buttons with icons
+.icon {
+    &::before {
+        content: '';
+        height: 0.85em;
+        display: inline-block;
+        background-size: contain;
+        aspect-ratio: 1;
+        background-repeat: no-repeat;
+        margin-right: 0.5em;
+        transform: translateY(1px);
+    }
+
+    &__linkedin::before {
+        background-image: url(/portfolio/uploads/2023/02/icon_linkedin.svg);
+    }
+
+    &__resumee::before {
+        background-image: url(/portfolio/uploads/2023/02/icon_document.svg);
+    }
+
+    &__graduate::before {
+        background-image: url(/portfolio/uploads/2023/02/icon_graduate.svg);
+    }
+
+    &__master::before {
+        background-image: url(/portfolio/uploads/2023/02/icon_master.svg);
+    }
+}
+
+/* Fancy global styles */
+.heart {
+    color: $electric-blue;
 }
