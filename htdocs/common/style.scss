@@ -81,7 +81,10 @@ main {
 .col-9 { @include colWidth(9); }
 .col-10 { @include colWidth(10); }
 .col-11 { @include colWidth(11); }
-.col-12 { @include colWidth(12); }
+.col-12 {
+    margin: 0;
+    width: 100%;
+ }
 
 .btn {
     padding: 6px 16px;

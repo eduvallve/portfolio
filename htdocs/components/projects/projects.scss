@@ -1,0 +1,55 @@
+/* Utils */
+@import '../../common/utils/colors';
+@import '../../common/utils/breakpoints';
+
+.projects {
+    background-color: #f9f9f9;
+
+    &__main {
+        min-height: 100vh;
+        display: flex;
+        font-family: "Raleway";
+
+        & > .cols .cols.col-8 {
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: var(--col-gap);
+        }
+
+        &-title {
+            margin-top: 1em;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 45px;
+            position: relative;
+            margin-bottom: 1em;
+
+            &::after {
+                content: '';
+                width: 2em;
+                height: 4px;
+                background: #015fb5;
+                position: absolute;
+                bottom: -0.5em;
+                left: 0;
+            }
+        }
+    }
+
+    &__item {
+        height: fit-content;
+
+        .col-8 {
+            margin-right: calc(100% * -2/12 + var(--col-gap) * 0.5);
+            background: lightsalmon;
+            margin-left: 0;
+        }
+
+        .col-6 {
+            margin: 4vw 0;
+            padding: 0 15px 15px;
+            background: white;
+            box-shadow: 1px 3px 4px rgb(0 0 0 / 25%);
+        }
+    }
+}

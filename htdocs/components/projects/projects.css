@@ -1,0 +1,47 @@
+/* Utils */ /* --- Colors */
+.projects {
+  background-color: #f9f9f9;
+}
+.projects__main {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Raleway";
+}
+.projects__main > .cols .cols.col-8 {
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--col-gap);
+}
+.projects__main-title {
+  margin-top: 1em;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 45px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.projects__main-title::after {
+  content: "";
+  width: 2em;
+  height: 4px;
+  background: #015fb5;
+  position: absolute;
+  bottom: -0.5em;
+  left: 0;
+}
+.projects__item {
+  height: fit-content;
+}
+.projects__item .col-8 {
+  margin-right: calc(-16.6666666667% + var(--col-gap) * 0.5);
+  background: lightsalmon;
+  margin-left: 0;
+}
+.projects__item .col-6 {
+  margin: 4vw 0;
+  padding: 0 15px 15px;
+  background: white;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=projects.css.map */

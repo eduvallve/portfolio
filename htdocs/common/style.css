@@ -165,13 +165,8 @@ main {
 }
 
 .col-12 {
-  margin: 0 calc(var(--col-gap) * 0.5);
+  margin: 0;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .col-12 {
-    width: calc(100% - var(--col-gap));
-  }
 }
 
 .btn {
