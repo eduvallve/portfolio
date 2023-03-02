@@ -85,8 +85,8 @@ class Brief {
     function freshDot() {
       this.obj = document.createElement("div");
       this.obj.classList.add("brief__animation--star");
-      this.obj.style.left = `calc(100vw * ${Math.random()})`;
-      this.obj.style.top = `calc(100vh * ${Math.random()})`;
+      this.obj.style.left = `calc(100vmax * ${Math.random()})`;
+      this.obj.style.top = `calc(100vmax * ${Math.random()})`;
       this.size = Math.floor(2 * Math.random()) + 4;
       this.obj.style.height = this.size + "px";
       this.obj.style.width = this.size + "px";

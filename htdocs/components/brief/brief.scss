@@ -1,3 +1,7 @@
+/* Utils */
+@import '../../common/utils/colors';
+@import '../../common/utils/breakpoints';
+
 /* Variables */
 /* --- Sizes */
 $sunSize: 20vh;
@@ -107,8 +111,8 @@ $sunSize: 20vh;
         }
 
         &--stars {
-            width: 100vw;
-            height: 100vh;
+            width: 100vmax;
+            height: 100vmax;
             position: absolute;
             top: 0;
             left: 0;
@@ -116,8 +120,7 @@ $sunSize: 20vh;
         }
 
         &--star {
-            background-color: #000;
-            position: fixed;
+            position: absolute;
             border-radius: 50%;
             background-color: rgb(69 94 115 / 90%);
             transition: opacity 1s ease;

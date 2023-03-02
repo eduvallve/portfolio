@@ -1,11 +1,17 @@
+/* Utils */
+@import '../../common/utils/colors';
+@import '../../common/utils/breakpoints';
+
 .basicInformation {
+    position: relative;
+
     &__main {
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         font-family: 'Raleway';
-        font-size: 15px;
+        font-size: 18px;
     }
 
     &__name {
@@ -18,9 +24,18 @@
     }
 
     .profilePic {
-        width: 80px;
+        width: 100px;
         max-width: 100%;
         margin-bottom: var(--col-gap);
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include breakpoint($bp-tablet-min) {
+            flex-direction: column;
+        }
     }
 
     .btn {
@@ -66,11 +81,11 @@
                     display: block;
                     position: absolute;
                     width: calc(75% - var(--col-gap));
-                    top: calc(var(--col-gap) * 6);
                     left: calc(var(--col-gap) * 0.5 + 25%);
                     font-size: 0.75em;
                     line-height: 1.45em;
                     font-family: 'Libre Baskerville';
+                    top: calc(var(--col-gap) * 2.5 + 100%);
                 }
 
                 .rounded-tag::after {
@@ -84,5 +99,44 @@
                 }
             }
         }
+    }
+
+    &__animation {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+
+        &--star {
+            position: absolute;
+            border-radius: 50%;
+            background-color: lightblue;
+            transition: opacity 1s ease;
+            animation: dotWave ease-in-out 5s;
+        }
+    }
+}
+
+/* -- Animations -- */
+
+@keyframes dotWave {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        outline: 0px solid lightblue;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        outline: 10px solid lightblue;
+        opacity: 0;
+        background-color: white;
+        transform: scale(3);
     }
 }

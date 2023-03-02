@@ -6,8 +6,10 @@
         <h2 class="basicInformation__name">Eduard Vallvé</h2>
         <p class="basicInformation__slogan">I <span class="heart">&#10084;</span> user interfaces</p>
         <p class="basicInformation__description"><?php echo (intval(date("Y")) - 2016); ?> years of experience working with both small and big companies.</p>
-        <a class="btn btn__secondary icon icon__linkedin" href="https://www.linkedin.com/in/eduvallve/" target="_blank">My LinkedIn</a>
-        <a class="btn btn__secondary icon icon__resumee" href="#" target="_blank">My Resumee</a>
+        <div class="basicInformation__buttons">
+          <a class="btn btn__secondary icon icon__linkedin" href="https://www.linkedin.com/in/eduvallve/" target="_blank">My LinkedIn</a>
+          <a class="btn btn__secondary icon icon__resumee" href="#" target="_blank">My Resumee</a>
+        </div>
       </div>
       <div class="col-4">
         <p class="basicInformation__studies icon icon__graduate">Degree in Multimedia (UPC).</p>
@@ -32,4 +34,7 @@
       </div>
     </div>
   </main>
+  <div class="basicInformation__animation">
+    <div class="basicInformation__animation--stars"></div>
+  </div>
 </section>

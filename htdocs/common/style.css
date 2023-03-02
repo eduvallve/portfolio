@@ -42,7 +42,7 @@ section {
 }
 
 main {
-  width: 1200px;
+  width: 1728px;
   max-width: calc(100vw - 30px);
   padding: 15px;
   margin: auto;
@@ -175,13 +175,16 @@ main {
 }
 
 .btn {
-  padding: 6px 18px;
+  padding: 6px 16px;
   border-radius: 50px;
   text-decoration: none;
+  height: fit-content;
+  width: fit-content;
 }
 .btn__secondary {
   color: rgb(31, 94, 148);
   border: 1px solid rgb(31, 94, 148);
+  background: white;
 }
 
 .icon::before {
@@ -214,7 +217,7 @@ main {
 
 .rounded-tag {
   display: flex;
-  width: 80px;
+  width: 120px;
   max-width: 100%;
   min-width: 55px;
   aspect-ratio: 1;
@@ -225,6 +228,7 @@ main {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1254901961);
   position: relative;
   cursor: pointer;
+  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */
