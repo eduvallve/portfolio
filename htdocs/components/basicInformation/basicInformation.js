@@ -9,7 +9,7 @@ init() {
     setInterval(() => {
         this.deleteSkyDots();
         this.createSkyDots();
-    }, 5000);
+    }, 2500);
 }
 
 setRefs() {

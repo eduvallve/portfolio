@@ -96,7 +96,7 @@
   border-radius: 50%;
   background-color: lightblue;
   transition: opacity 1s ease;
-  animation: dotWave ease-in-out 5s;
+  animation: dotWave ease-in-out 2.5s;
 }
 
 /* -- Animations -- */
