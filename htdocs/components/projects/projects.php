@@ -1,3 +1,8 @@
+<?php
+  include "htdocs/common/utils.php";
+  include "projectsRepo/projectsRepo.php";
+?>
+
 <section class="projects">
   <main class="projects__main">
     <div class="cols">
