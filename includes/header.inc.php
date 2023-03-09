@@ -1,5 +1,6 @@
+<?php include "htdocs/common/utils.php"; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>">
 <head>
 <title><?php echo($pageTitle); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

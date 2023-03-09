@@ -1,4 +1,8 @@
 <?php
+
+// Global PHP vars
+$lang = "en";
+
 // PHP helper functions
 
 // srt_ends_with
