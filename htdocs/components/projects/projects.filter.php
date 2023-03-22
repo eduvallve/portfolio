@@ -20,12 +20,21 @@
             }
         }
 
-        showProjects($filteredProjects);
+        showProjects($filteredProjects, $data);
     }
 
-    function showProjects($projects) {
+    function getProjectTags($project, $data) {
+        foreach ($data as $name => $d) {
+            if ($name === $project) {
+                return $d["tags"];
+            }
+        }
+    }
+
+    function showProjects($projects, $data) {
         foreach ($projects as $project) {
             include "projectsRepo/".$project."/".$project.".en.php";
+            $tags = implode(" · ", getProjectTags($project, $data));
             include "projects.template.php";
         }
     }

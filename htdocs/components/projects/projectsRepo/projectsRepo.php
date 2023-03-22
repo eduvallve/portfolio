@@ -53,7 +53,7 @@
         $data = json_decode(file_get_contents(getcwd()."/htdocs/components/projects/projectsRepo/projectsRepo.json"), true);
         foreach ($newProjects as $np) {
             $data[$np] = array (
-                'filters' => array(),
+                'categories' => array(),
                 'date' => array(),
                 'tags' => array(),
                 'highlight' => false,
