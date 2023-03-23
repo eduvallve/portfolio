@@ -52,7 +52,6 @@ class Brief {
 
   toggleStars() {
     let scroll = window.pageYOffset;
-    let windowHeight = window.innerHeight;
     const sunSize = this.sun.offsetHeight;
     if (scroll < sunSize / 20) {
       this.stars.style.opacity = 1;
@@ -87,9 +86,11 @@ class Brief {
       this.obj.classList.add("brief__animation--star");
       this.obj.style.left = `calc(100vmax * ${Math.random()})`;
       this.obj.style.top = `calc(100vmax * ${Math.random()})`;
-      this.size = Math.floor(2 * Math.random()) + 4;
-      this.obj.style.height = this.size + "px";
-      this.obj.style.width = this.size + "px";
+      const starColor = Math.random() * 45 + 35;
+      this.obj.style.backgroundColor = `rgb(255 255 255 / ${starColor}%)`;
+      const size = Math.floor(7 * Math.random());
+      this.obj.style.height = size + "px";
+      this.obj.style.width = size + "px";
 
       base.appendChild(this.obj);
     }

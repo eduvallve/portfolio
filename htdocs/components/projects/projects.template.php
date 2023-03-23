@@ -23,6 +23,9 @@ $uri = implode('/', $parts);
     </div>
     <div class="col-6">
         <h3 class="projects__item--title"><?php echo $title; ?></h3>
+        <?php if ($client) { ?>
+            <p class="projects__item--tagline">client :: <b><?php echo $client; ?></b></p>
+        <?php } ?>
         <p class="projects__item--description"><?php echo $description; ?></p>
         <span class="projects__item--tags"><?php echo $tags; ?></span>
     </div>

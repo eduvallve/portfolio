@@ -110,6 +110,15 @@
   background-color: rgba(69, 94, 115, 0.9);
   transition: opacity 1s ease;
 }
+.brief h1 {
+  display: inline-block;
+}
+.brief .tag-code {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0.75em 0 0.5em;
+}
 
 /* -- Animations -- */
 @keyframes slideInUp {

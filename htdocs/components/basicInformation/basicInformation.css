@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   font-family: "Raleway";
-  font-size: 18px;
+  font-size: 15px;
 }
 .basicInformation__name {
   margin-top: 0;
@@ -37,8 +37,10 @@
   font-size: 0.9em;
   margin-right: 10px;
 }
-.basicInformation .btn:last-of-type {
-  margin-bottom: 25px;
+@media screen and (max-width: 767px) {
+  .basicInformation .btn:last-of-type {
+    margin-bottom: 25px;
+  }
 }
 .basicInformation__studies {
   margin-top: 0;
@@ -97,6 +99,17 @@
   background-color: lightblue;
   transition: opacity 1s ease;
   animation: dotWave ease-in-out 2.5s;
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .basicInformation .col-1 {
+    width: 16.6666666667%;
+  }
+  .basicInformation .col-3 {
+    width: 33.3333333333%;
+  }
+  .basicInformation .col-4 {
+    width: 41.6666666667%;
+  }
 }
 
 /* -- Animations -- */

@@ -1,6 +1,10 @@
 <section class="brief">
   <main class="brief__main">
-    <h1 class="brief__name">Eduard Vallvé</h1>
+    <div class="brief__name">
+      <span class="tag-code">&lt;</span>
+      <h1>Eduard Vallvé</h1>
+      <span class="tag-code">/&gt;</span>
+    </div>
     <div class="brief__role">
       <h2 class="brief__role--basic">Frontend</h2>
       <ul class="brief__role--list">

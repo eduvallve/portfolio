@@ -175,7 +175,15 @@
 
             @include breakpoint($bp-tablet-min) {
                 max-width: 80%;
+                margin-bottom: 0.5em;
             }
+        }
+
+        &--tagline {
+            font-size: 0.9em;
+            opacity: 0.6;
+            text-transform: capitalize;
+            margin-bottom: var(--col-gap);
         }
 
         &--tags {

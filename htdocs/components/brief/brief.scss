@@ -127,6 +127,17 @@ $sunSize: 20vh;
 
         }
     }
+
+    h1 {
+        display: inline-block;
+    }
+
+    .tag-code {
+        font-weight: bold;
+        font-size: 20px;
+        color: $white-transparent-six;
+        margin: 0 0.75em 0 0.5em;
+    }
 }
 
 /* -- Animations -- */

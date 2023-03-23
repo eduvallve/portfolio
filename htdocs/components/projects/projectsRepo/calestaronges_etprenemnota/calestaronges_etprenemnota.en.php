@@ -13,4 +13,5 @@ $bgImg = "uploads/2023/03/fons-groc-2-3.svg";
 
 $bgColor = "white";
 
+$client = "Pastisseria Valls SL";
 ?>

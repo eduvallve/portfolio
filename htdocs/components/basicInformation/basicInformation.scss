@@ -11,7 +11,7 @@
         flex-direction: column;
         justify-content: center;
         font-family: 'Raleway';
-        font-size: 18px;
+        font-size: 15px;
     }
 
     &__name {
@@ -44,8 +44,10 @@
         font-size: 0.9em;
         margin-right: 10px;
 
-        &:last-of-type {
-            margin-bottom: 25px;
+        @media screen and (max-width: $bp-mobile-max) {
+            &:last-of-type {
+                margin-bottom: 25px;
+            }
         }
     }
 
@@ -116,6 +118,20 @@
             background-color: lightblue;
             transition: opacity 1s ease;
             animation: dotWave ease-in-out 2.5s;
+        }
+    }
+
+    @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+        .col-1 {
+            width: calc(100% * 2/12);
+        }
+
+        .col-3 {
+            width: calc(100% * 4/12);
+        }
+
+        .col-4 {
+            width: calc(100% * 5/12);
         }
     }
 }

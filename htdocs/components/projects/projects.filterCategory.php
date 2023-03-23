@@ -1,5 +1,5 @@
 <div class="projects__filter-category--filterlist">
-    <span class="projects__filter-category active" data-filter="all">All</span>
+    <span class="projects__filter-category active" data-filter="all">All works</span>
     <?php
         $data = json_decode(file_get_contents(getcwd()."/htdocs/components/projects/projectsRepo/projectsRepo.json"), true);
         // print_r($data); echo '<br>';
