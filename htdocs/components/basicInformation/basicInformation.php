@@ -1,7 +1,13 @@
 <section class="basicInformation">
   <main class="basicInformation__main">
     <div class="cols">
-      <div class="col-1"><img class="profilePic" src="<?php echo $uri."/uploads/2023/02/profilePic.svg";?>" alt="Profile Picture"></div>
+      <div class="col-1">
+        <picture>
+          <source type="image/webp" srcset="<?php echo $uri."/uploads/2023/03/eduvallve_profile-pic-200.webp";?>" />
+          <source type="image/jpeg"srcset="<?php echo $uri."/uploads/2023/03/eduvallve_profile-pic-200.jpeg";?>" />
+          <img class="profilePic" src="<?php echo $uri."/uploads/2023/02/profilePic.svg";?>" alt="My profile picture" width="100" height="100">
+        </picture>
+      </div>
       <div class="col-3">
         <h2 class="basicInformation__name">Eduard Vallvé</h2>
         <p class="basicInformation__slogan">I <span class="heart">&#10084;</span> user interfaces</p>
@@ -37,4 +43,5 @@
   <div class="basicInformation__animation">
     <div class="basicInformation__animation--stars"></div>
   </div>
+  <div class="basicInformation__bg"></div>
 </section>

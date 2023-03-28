@@ -12,7 +12,8 @@
         $allCategories = array_unique($allCategories);
         sort($allCategories);
         foreach ($allCategories as $category) {
-            echo  '<span class="projects__filter-category" data-filter="'.$category.'">'.$category.'</span>';
+            $filterCategory = str_replace(' ','-',strtolower($category));
+            echo  '<span class="projects__filter-category" data-filter="'.$filterCategory.'">'.$category.'</span>';
         }
     ?>
 </div>

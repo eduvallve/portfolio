@@ -193,16 +193,19 @@ main {
   transform: translateY(1px);
 }
 .icon__linkedin::before {
-  background-image: url(/portfolio/uploads/2023/02/icon_linkedin.svg);
+  background-image: url(/portfolio/uploads/icons/icon_linkedin.svg);
 }
 .icon__resumee::before {
-  background-image: url(/portfolio/uploads/2023/02/icon_document.svg);
+  background-image: url(/portfolio/uploads/icons/icon_document.svg);
 }
 .icon__graduate::before {
-  background-image: url(/portfolio/uploads/2023/02/icon_graduate.svg);
+  background-image: url(/portfolio/uploads/icons/icon_graduate.svg);
 }
 .icon__master::before {
-  background-image: url(/portfolio/uploads/2023/02/icon_master.svg);
+  background-image: url(/portfolio/uploads/icons/icon_master.svg);
+}
+.icon__link--external::before {
+  background-image: url(/portfolio/uploads/icons/icon_link-external.svg);
 }
 
 /* Fancy global styles */

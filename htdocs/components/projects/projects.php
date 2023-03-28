@@ -1,10 +1,9 @@
 <?php
   include "htdocs/common/utils.php";
   include "projectsRepo/projectsRepo.php";
+  /* Tweenlite JS in a PHP file */
+  include "projects.tweenmax.min.php";
 ?>
-
-<!-- Tweenlite -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 
 <section class="projects">
   <main class="projects__main">

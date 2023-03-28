@@ -2,6 +2,8 @@
 @import '../../common/utils/colors';
 @import '../../common/utils/breakpoints';
 
+$uri: '/portfolio';
+
 .basicInformation {
     position: relative;
 
@@ -11,7 +13,7 @@
         flex-direction: column;
         justify-content: center;
         font-family: 'Raleway';
-        font-size: 15px;
+        font-size: 18px;
     }
 
     &__name {
@@ -27,6 +29,8 @@
         width: 100px;
         max-width: 100%;
         margin-bottom: var(--col-gap);
+        border-radius: 100%;
+        height: auto;
     }
 
     &__buttons {
@@ -124,6 +128,7 @@
     @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
         .col-1 {
             width: calc(100% * 2/12);
+            text-align: end;
         }
 
         .col-3 {
@@ -132,6 +137,23 @@
 
         .col-4 {
             width: calc(100% * 5/12);
+        }
+    }
+
+    &__bg {
+        background-image: url('#{$uri}/uploads/2023/03/bg-002-1200.webp');
+        background-size: cover;
+        background-position: center;
+        filter: opacity(0.75) blur(2px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        @include breakpoint($bp-tablet-min) {
+            filter: opacity(0.25) blur(2px);
         }
     }
 }

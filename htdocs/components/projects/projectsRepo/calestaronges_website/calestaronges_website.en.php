@@ -1,9 +1,25 @@
 <?php
 
-$title = "Ca les Taronges, corporate website";
+$title = "Corporate website of a cake shop";
 
-$description = "About the client: Pastisseria Valls is a small business in the town of Valls (Spain) with more than 100 years of experience. It is lead in pastry shops in its area.<br><br>Briefing: Pastisseria Valls had a functional website with some traffic and they wanted to add new feature for their users. They wanted their users to be able to customize a cake online, without having to call or impersonate the shop to do it.";
+$description = "<b>Context:</b> Pastisseria Valls is a cake shop in a small city. They want to gain visibility and they need a website that can show all they do and their company values.
+<br><br>
+<b>Briefing:</b> Create a modern catalogue & informative website which can effectively show photos of their product and information pages as well as blog posts.";
 
-$tech = "PHP · Javascript · ES6 · CSS · WordPress";
+$thumbnailImg = "uploads/2023/03/calestaronges_website-mockup-macbook-1200.png";
+
+// $mobilethumbnailImg = "uploads/2023/03/calestaronges_etprenemnota-mockup-mobile-768.png";
+
+// $bgImg = "uploads/2023/03/bg-002-1200.png";
+
+$bgColor = "burlywood";
+
+$client = "Pastisseria Valls SL";
+
+$linkExternal = true;
+
+$link = 'https://calestaronges.com/';
+
+$linkText = 'Visit the website';
 
 ?>

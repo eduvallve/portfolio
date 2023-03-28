@@ -114,19 +114,23 @@ main {
     }
 
     &__linkedin::before {
-        background-image: url(/portfolio/uploads/2023/02/icon_linkedin.svg);
+        background-image: url(/portfolio/uploads/icons/icon_linkedin.svg);
     }
 
     &__resumee::before {
-        background-image: url(/portfolio/uploads/2023/02/icon_document.svg);
+        background-image: url(/portfolio/uploads/icons/icon_document.svg);
     }
 
     &__graduate::before {
-        background-image: url(/portfolio/uploads/2023/02/icon_graduate.svg);
+        background-image: url(/portfolio/uploads/icons/icon_graduate.svg);
     }
 
     &__master::before {
-        background-image: url(/portfolio/uploads/2023/02/icon_master.svg);
+        background-image: url(/portfolio/uploads/icons/icon_master.svg);
+    }
+
+    &__link--external::before {
+        background-image: url(/portfolio/uploads/icons/icon_link-external.svg);
     }
 }
 
