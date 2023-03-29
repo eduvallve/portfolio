@@ -2,15 +2,15 @@
 
 $title = "E-commerce for a cake shop";
 
-$description = "<b>Context:</b> Pastisseria Valls is a cake shop in a small city who has regular customers. They are used to move to the physical shop to buy cakes. To increase salesforce and gain potential customers, they aim an e-commerce.
+$description = "<span class='strong'>Context:</span> Pastisseria Valls is a cake shop in a small city who has regular customers. They are used to move to the physical shop to buy cakes. To increase salesforce and gain potential customers, they aim an e-commerce.
 <br><br>
-<b>Briefing:</b> Create a usable & easy-to-use e-commerce site which can be clear to manage from the company’s side and it provides a nice user experience for regular customers.";
+<span class='strong'>Briefing:</span> Create a usable & easy-to-use e-commerce site which can be clear to manage from the company’s side and it provides a nice user experience for regular customers.";
 
-$thumbnailImg = "uploads/2023/03/calestaronges_ecommerce-mockup-tablet-900.png";
+$thumbnailImg = "calestaronges_ecommerce-mockup-tablet-1024.png";
 
-// $mobilethumbnailImg = "uploads/2023/03/calestaronges_etprenemnota-mockup-mobile-768.png";
+// $mobilethumbnailImg = "";
 
-// $bgImg = "uploads/2023/03/bg-002-1200.png";
+// $bgImg = "";
 
 $bgColor = "darkseagreen";
 

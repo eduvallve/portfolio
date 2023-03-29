@@ -200,6 +200,10 @@ main {
   animation: fadeHoverBtnIconLeft ease-in-out 0.5s;
 }
 
+span.strong {
+  font-weight: bold;
+}
+
 .icon::before {
   content: "";
   height: 0.85em;
