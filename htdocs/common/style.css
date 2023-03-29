@@ -170,16 +170,34 @@ main {
 }
 
 .btn {
-  padding: 6px 16px;
+  padding: 0.75em 1.25em;
   border-radius: 50px;
   text-decoration: none;
   height: fit-content;
   width: fit-content;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 6px 16px;
+  }
+}
 .btn__secondary {
   color: rgb(31, 94, 148);
   border: 1px solid rgb(31, 94, 148);
   background: white;
+  transition: 0.5s background-color;
+}
+.btn__secondary::before {
+  transition: 0.5s filter;
+}
+.btn__secondary:hover {
+  color: white;
+  background-color: rgb(31, 94, 148);
+  animation: fadeHoverBtnLeft ease-in-out 0.5s;
+}
+.btn__secondary:hover::before {
+  filter: brightness(0) invert(1);
+  animation: fadeHoverBtnIconLeft ease-in-out 0.5s;
 }
 
 .icon::before {
@@ -227,6 +245,46 @@ main {
   position: relative;
   cursor: pointer;
   background: white;
+}
+
+/* -- Animations -- */
+@keyframes fadeHoverBtnLeft {
+  0% {
+    color: rgb(31, 94, 148);
+    background-color: white;
+  }
+  50% {
+    padding-left: 6px;
+    padding-right: 26px;
+    color: white;
+    background-color: white;
+  }
+  51% {
+    padding-right: 6px;
+    padding-left: 26px;
+    color: white;
+  }
+  100% {
+    color: white;
+    background-color: rgb(31, 94, 148);
+  }
+}
+@keyframes fadeHoverBtnIconLeft {
+  0% {
+    opacity: 1;
+    filter: none;
+  }
+  50% {
+    opacity: 0;
+    filter: none;
+  }
+  51% {
+    filter: brightness(0) invert(1);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(0) invert(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

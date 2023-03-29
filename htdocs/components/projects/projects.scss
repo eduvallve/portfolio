@@ -259,8 +259,12 @@
                     align-items: start;
                 }
 
-                .projects__item--img img {
-                    rotate: -2deg;
+                .projects__item--img {
+                    justify-content: end;
+
+                    img {
+                        rotate: -2deg;
+                    }
                 }
 
                 .projects__item--tags {

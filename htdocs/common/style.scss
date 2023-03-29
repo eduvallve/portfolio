@@ -87,16 +87,36 @@ main {
  }
 
 .btn {
-    padding: 6px 16px;
+    padding: 0.75em 1.25em;
     border-radius: 50px;
     text-decoration: none;
     height: fit-content;
     width: fit-content;
 
+    @include breakpoint($bp-tablet-min) {
+        padding: 6px 16px;
+    }
+
     &__secondary {
         color: $electric-blue;
         border: 1px solid $electric-blue;
         background: white;
+        transition: 0.5s background-color;
+
+        &::before {
+            transition: 0.5s filter;
+        }
+
+        &:hover {
+            color: white;
+            background-color: $electric-blue;
+            animation: fadeHoverBtnLeft ease-in-out 0.5s;
+
+            &::before {
+                filter: brightness(0) invert(1);
+                animation: fadeHoverBtnIconLeft ease-in-out 0.5s;
+            }
+        }
     }
 }
 
@@ -153,4 +173,52 @@ main {
     position: relative;
     cursor: pointer;
     background: white;
+}
+
+/* -- Animations -- */
+
+@keyframes fadeHoverBtnLeft {
+    0% {
+        color: $electric-blue;
+        background-color: white;
+    }
+
+    50% {
+        padding-left: 6px;
+        padding-right: 26px;
+        color: white;
+        background-color: white;
+    }
+
+    51% {
+        padding-right: 6px;
+        padding-left: 26px;
+        color: white;
+    }
+
+    100% {
+        color: white;
+        background-color: $electric-blue;
+    }
+}
+
+@keyframes fadeHoverBtnIconLeft {
+    0% {
+        opacity: 1;
+        filter: none;
+    }
+
+    50% {
+        opacity: 0;
+        filter: none;
+    }
+
+    51% {
+        filter: brightness(0) invert(1);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(0) invert(1);
+    }
 }

@@ -242,6 +242,9 @@
     z-index: 1;
     align-items: start;
   }
+  .projects__item:nth-child(even) .projects__item--img {
+    justify-content: end;
+  }
   .projects__item:nth-child(even) .projects__item--img img {
     rotate: -2deg;
   }
