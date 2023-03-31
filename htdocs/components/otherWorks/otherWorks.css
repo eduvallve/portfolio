@@ -1,0 +1,110 @@
+/* Utils */ /* --- Colors */
+.otherWorks {
+  background-color: #0c66b9;
+  border: 3vw solid white;
+  min-height: unset;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2705882353);
+  background-image: url("/portfolio/uploads/media/bg-002-1200.png");
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.otherWorks__main {
+  padding: 100px 15px;
+  max-width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 6vw - 200px);
+  font-family: "Raleway";
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .otherWorks__main > .cols .cols.col-8 {
+    width: 100%;
+  }
+}
+.otherWorks__main-title {
+  margin-top: 1em;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 45px;
+  position: relative;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s;
+  position: relative;
+  margin-bottom: 150px;
+}
+.otherWorks__main-title::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  bottom: -22px;
+  background-color: white;
+  left: 0;
+}
+.otherWorks__list {
+  text-align: center;
+}
+.otherWorks__list img {
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.otherWorks__list h4 {
+  color: white;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: lighter;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .otherWorks__list h4 {
+    margin-bottom: 70px;
+  }
+}
+.otherWorks__list--items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--col-gap);
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .otherWorks__list--items {
+    margin-bottom: 70px;
+  }
+}
+.otherWorks__list--item {
+  display: flex;
+  flex-direction: row;
+  gap: var(--col-gap);
+  align-items: flex-start;
+  text-align: start;
+}
+@media screen and (max-width: 767px) {
+  .otherWorks__list--item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+.otherWorks__list--item--image {
+  min-width: 60px;
+  min-height: 60px;
+  background-color: white;
+}
+.otherWorks__list--item--content {
+  color: white;
+  line-height: 1.25em;
+}
+.otherWorks__list--item--title {
+  font-weight: bold;
+}
+.otherWorks__list--item--description {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=otherWorks.css.map */

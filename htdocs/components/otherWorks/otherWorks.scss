@@ -1,0 +1,125 @@
+/* Utils */
+@import '../../common/utils/colors';
+@import '../../common/utils/breakpoints';
+
+$uri: '/portfolio';
+
+.otherWorks {
+    background-color: #0c66b9;
+    border: 3vw solid white;
+    min-height: unset;
+    box-shadow: inset 0px 0px 10px #00000045;
+    background-image: url('#{$uri}/uploads/media/bg-002-1200.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    &__main {
+        padding: 100px 15px;
+        max-width: calc(100% - 30px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: calc(100vh - 6vw - 200px);
+        font-family: "Raleway";
+        font-size: 15px;
+
+        @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-large-desktop) {
+            & > .cols .cols.col-8 {
+                width: 100%;
+            }
+        }
+
+        &-title {
+            margin-top: 1em;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 45px;
+            position: relative;
+            margin-bottom: 1em;
+            text-transform: capitalize;
+            color: white;
+            cursor: pointer;
+            transition: 0.25s;
+            position: relative;
+            margin-bottom: 150px;
+
+            &::after {
+                content: '';
+                width: 100px;
+                height: 3px;
+                position: absolute;
+                bottom: -22px;
+                background-color: white;
+                left: 0;
+            }
+        }
+    }
+
+    &__list {
+        text-align: center;
+
+        img {
+            border: 1px solid white;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        h4 {
+            color: white;
+            font-family: 'Libre Baskerville';
+            font-size: 18px;
+            font-weight: lighter;
+            opacity: 0.9;
+            margin-bottom: 40px;
+
+            @include breakpoint($bp-tablet-min) {
+                margin-bottom: 70px;
+            }
+        }
+
+        &--items {
+            display: flex;
+            flex-direction: column;
+            gap: var(--col-gap);
+            margin-bottom: 40px;
+
+            @include breakpoint($bp-tablet-min) {
+                margin-bottom: 70px;
+            }
+        }
+
+        &--item {
+            display: flex;
+            flex-direction: row;
+            gap: var(--col-gap);
+            align-items: flex-start;
+            text-align: start;
+
+            @media screen and (max-width: $bp-mobile-max) {
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            &--image {
+                min-width: 60px;
+                min-height: 60px;
+                background-color: white;
+            }
+
+            &--content {
+                color: white;
+                line-height: 1.25em;
+            }
+
+            &--title {
+                font-weight: bold;
+            }
+
+            &--description {
+                font-size: 14px;
+            }
+        }
+    }
+}

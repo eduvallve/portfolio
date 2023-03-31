@@ -58,7 +58,7 @@
                 'tags' => array(),
                 'highlight' => false,
                 'hidden' => false
-              );;
+              );
         }
         // encode array to json
         $json = json_encode($data);
