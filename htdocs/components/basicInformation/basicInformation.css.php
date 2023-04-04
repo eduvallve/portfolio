@@ -1,4 +1,4 @@
-/* Utils */ /* --- Colors */
+/* ========== BASICINFORMATION STYLES ========== */ /* --- Colors */
 .basicInformation {
   position: relative;
 }
@@ -150,4 +150,3 @@
   }
 }
 
-/*# sourceMappingURL=basicInformation.css.map */

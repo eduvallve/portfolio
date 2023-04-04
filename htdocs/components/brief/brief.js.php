@@ -1,3 +1,4 @@
+<script type="text/javascript">
 const FE_ROLES = ["engineer", "problem solver", "creative", "developer"];
 
 class Brief {
@@ -102,3 +103,4 @@ class Brief {
 }
 
 const BRIEF = new Brief();
+</script>

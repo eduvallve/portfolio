@@ -9,14 +9,15 @@
 <link defer rel="shortcut icon" href="<?php echo $uri.'/htdocs/'; ?>favicon.ico" type="image/png" />
 <?php include 'fonts.inc.php'; ?>
 <link defer rel="stylesheet" href="<?php echo $uri.'/htdocs/common/'; ?>style.css">
+<!-- Styles for components of this page -->
 <?php
 if ($pageComponents) {
     $pageComp = array_unique($pageComponents);
-    foreach ($pageComp as $component) {
-        ?>
-        <link defer rel="stylesheet" href="<?php echo $uri.'/htdocs/components/'.$component.'/'.$component.'.css'; ?>">
-        <?php
-    }
+    foreach ($pageComp as $component) { ?>
+        <style type="text/css"><?php
+            include 'htdocs/components/'.$component.'/'.$component.'.css.php';
+        ?></style>
+    <?php }
 }
 ?>
 </head>

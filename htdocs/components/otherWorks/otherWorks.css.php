@@ -1,4 +1,4 @@
-/* Utils */ /* --- Colors */
+/* ========== OTHERWORKS STYLES ========== */ /* --- Colors */
 .otherWorks {
   background-color: #0c66b9;
   border: 3vw solid white;
@@ -150,7 +150,7 @@
   margin-top: 0.25em;
 }
 
-/* Animations */
+/* -- Animations -- */
 @keyframes tdrotate {
   0% {
     transform: rotateY(0deg) rotateX(0deg);
@@ -213,5 +213,3 @@
     transform: translate(-50%, -50%);
   }
 }
-
-/*# sourceMappingURL=otherWorks.css.map */

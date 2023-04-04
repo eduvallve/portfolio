@@ -1,10 +1,9 @@
+<!-- JavaScript scripts for components of this page -->
 <?php
 if ($pageComponents) {
     $pageComp = array_unique($pageComponents);
     foreach ($pageComp as $component) {
-        ?>
-        <script src="<?php echo $uri.'/htdocs/components/'.$component.'/'.$component.'.js'; ?>"></script>
-        <?php
+        include 'htdocs/components/'.$component.'/'.$component.'.js.php';
     }
 }
 ?>

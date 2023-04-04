@@ -1,6 +1,4 @@
-/* Utils */ /* --- Colors */
-/* Variables */
-/* --- Sizes */
+/* ========== BRIEF STYLES ========== */ /* --- Colors */
 .brief {
   display: flex;
   background-color: rgb(0, 0, 33);
@@ -147,5 +145,3 @@
     transform: rotate(360deg);
   }
 }
-
-/*# sourceMappingURL=brief.css.map */

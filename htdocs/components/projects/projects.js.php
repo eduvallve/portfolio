@@ -1,3 +1,4 @@
+<script type="text/javascript">
 class projects {
     constructor() {
         this.init();
@@ -101,3 +102,4 @@ class projects {
 }
 
 const PROJECTS = new projects();
+</script>

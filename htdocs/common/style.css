@@ -1,4 +1,4 @@
-/* Utils */ /* --- Colors */
+/* Utils */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Raleway:wght@400;600&display=swap");
 :root {
@@ -15,6 +15,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  display: none;
 }
 .header .menu {
   display: flex;
@@ -204,6 +205,11 @@ span.strong {
   font-weight: bold;
 }
 
+.rights_line {
+  font-size: 0.65em;
+  padding: 10px 0;
+}
+
 .icon::before {
   content: "";
   height: 0.85em;
@@ -228,6 +234,10 @@ span.strong {
 }
 .icon__link--external::before {
   background-image: url(/portfolio/uploads/icons/icon_link-external.svg);
+}
+.icon__greet::before {
+  background-image: url(/portfolio/uploads/icons/icon_greet.svg);
+  width: 1.2em;
 }
 
 /* Fancy global styles */

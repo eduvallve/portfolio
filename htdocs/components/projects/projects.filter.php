@@ -47,7 +47,7 @@
     $filteredProjects = applyProjectsFilter($filter, $data);
 
     foreach ($filteredProjects as $project) {
-        include "projectsRepo/".$project."/".$project.".en.php";
+        include "projectsRepo/".$project."/".$project.".".$lang.".php";
         $tags = implode(" · ", getProjectTags($project, $data));
         include "projects.template.php";
     }

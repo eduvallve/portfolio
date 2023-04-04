@@ -19,6 +19,7 @@ body {
     top: 0;
     left: 0;
 	z-index: 1;
+    display: none;
 
     .menu {
         display: flex;
@@ -124,6 +125,11 @@ span.strong {
     font-weight: bold;
 }
 
+.rights_line {
+    font-size: 0.65em;
+    padding: 10px 0;
+}
+
 // Social buttons with icons
 .icon {
     &::before {
@@ -155,6 +161,11 @@ span.strong {
 
     &__link--external::before {
         background-image: url(/portfolio/uploads/icons/icon_link-external.svg);
+    }
+
+    &__greet::before {
+        background-image: url(/portfolio/uploads/icons/icon_greet.svg);
+        width: 1.2em;
     }
 }
 

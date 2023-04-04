@@ -1,4 +1,4 @@
-/* Utils */ /* --- Colors */
+/* ========== PROJECTS STYLES ========== */ /* --- Colors */
 .projects {
   background-color: #f9f9f9;
 }
@@ -281,5 +281,3 @@
     opacity: 1;
   }
 }
-
-/*# sourceMappingURL=projects.css.map */
