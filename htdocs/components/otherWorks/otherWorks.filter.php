@@ -15,7 +15,7 @@
     $filteredWorks = applyFilterWorks($filter, $data);
 
     foreach ($filteredWorks as $work) {
-        include "otherWorksRepo/".$work."/".$work.".en.php";
+        include "otherWorksRepo/".$work."/".$work.".".$lang.".php";
         $tags = implode(" · ", getWorkTags($work, $data));
         include "otherWorks.template.item.php";
     }

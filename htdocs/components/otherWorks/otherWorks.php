@@ -9,7 +9,7 @@
     <div class="cols">
       <div class="col-8 cols">
         <div class="col-12 <?= $component ?>__main-title">
-          My other passions
+          <?= $comp_header ?>
         </div>
         <div class="col-12 cols <?= $component ?>__list">
         <?php

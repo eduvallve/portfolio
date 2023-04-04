@@ -1,8 +1,8 @@
 <?php
 
-$title = 'A, B & C';
+$title = 'Bolado';
 
-$description = "Description here";
+$description = "Advertising spot";
 
 // $thumbnailImg = "";
 

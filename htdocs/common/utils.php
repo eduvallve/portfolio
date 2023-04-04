@@ -1,7 +1,13 @@
 <?php
 
 // Global PHP vars
-$lang = "en";
+// Set the default (EN) page language
+if(!isset($_COOKIE["lang"])) {
+    setcookie("lang", "en", time() + (86400 * 30), "/");
+    $lang = "en";
+} else {
+    $lang = $_COOKIE["lang"];
+}
 
 // PHP helper functions
 

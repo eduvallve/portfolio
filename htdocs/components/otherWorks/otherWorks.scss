@@ -14,12 +14,12 @@ $uri: '/portfolio';
     background-blend-mode: multiply;
 
     &__main {
-        padding: 100px 15px;
+        padding: 15px;
         max-width: calc(100% - 30px);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: calc(100vh - 6vw - 200px);
+        min-height: calc(100vh - 6vw - 30px);
         font-family: "Raleway";
         font-size: 15px;
 
@@ -36,12 +36,15 @@ $uri: '/portfolio';
             line-height: 45px;
             position: relative;
             margin-bottom: 1em;
-            text-transform: capitalize;
             color: white;
             cursor: pointer;
             transition: 0.25s;
             position: relative;
-            margin-bottom: 150px;
+            margin-bottom: 70px;
+
+            @include breakpoint($bp-desktop-min) {
+                margin-bottom: 150px;
+            }
 
             &::after {
                 content: '';
@@ -59,10 +62,48 @@ $uri: '/portfolio';
         text-align: center;
 
         img {
-            border: 1px solid white;
             width: 50px;
             height: 50px;
-            border-radius: 100%;
+        }
+
+        .heart {
+            filter: drop-shadow(0px 6px 4px #00000025);
+
+            &__3d-modelling {
+                transform-origin: bottom center;
+                animation: tdrotate linear 7s infinite;
+            }
+
+            &__animation-video {
+                transform-origin: bottom center;
+                animation: pendule ease-in-out 5s infinite;
+            }
+
+            &__motion-graphics {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                animation: zigzag ease-in-out 3s infinite;
+
+                &.heart-doubled {
+                    transform: translate(-50%, -50%);
+                    mix-blend-mode: lighten;
+                    z-index: 2;
+                    animation: zagzig ease-in-out 3s infinite;
+
+                    &.heart-back {
+                        z-index: 0;
+                        mix-blend-mode: normal;
+                    }
+                }
+            }
+        }
+
+        .animation__motion-graphics {
+            position: relative;
+            height: 50px;
         }
 
         h4 {
@@ -82,7 +123,9 @@ $uri: '/portfolio';
             display: flex;
             flex-direction: column;
             gap: var(--col-gap);
-            margin-bottom: 40px;
+            margin: auto;
+            margin-bottom: 80px;
+            max-width: 350px;
 
             @include breakpoint($bp-tablet-min) {
                 margin-bottom: 70px;
@@ -93,19 +136,23 @@ $uri: '/portfolio';
             display: flex;
             flex-direction: row;
             gap: var(--col-gap);
-            align-items: flex-start;
             text-align: start;
+            align-items: center;
 
             @media screen and (max-width: $bp-mobile-max) {
                 &:nth-child(even) {
                     flex-direction: row-reverse;
+                    text-align: end;
                 }
+            }
+
+            @include breakpoint($bp-tablet-min) {
+                align-items: flex-start;
             }
 
             &--image {
                 min-width: 60px;
                 min-height: 60px;
-                background-color: white;
             }
 
             &--content {
@@ -119,7 +166,88 @@ $uri: '/portfolio';
 
             &--description {
                 font-size: 14px;
+                margin-top: 0.25em;
             }
         }
+    }
+}
+
+/* Animations */
+
+@keyframes tdrotate {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.45;
+    }
+
+    50% {
+        transform: rotateY(180deg) rotateX(30deg);
+    }
+
+    75% {
+        opacity: 0.65;
+    }
+
+    76% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(360deg) rotateX(0deg);
+    }
+}
+
+@keyframes pendule {
+    0% {
+        transform: rotateZ(-25deg);
+    }
+
+    50% {
+        transform: rotateZ(25deg);
+    }
+
+    100% {
+        transform: rotateZ(-25deg);
+    }
+}
+
+@keyframes zigzag {
+    0% {
+        transform: translate(-50%, -50%);
+        filter: blur(0);
+    }
+
+    50% {
+        transform: translate(-65%, -35%);
+        filter: blur(2px);
+    }
+
+    100% {
+        filter: blur(0);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes zagzig {
+    0% {
+        transform: translate(-50%, -50%);
+        filter: blur(0);
+    }
+
+    50% {
+        transform: translate(-45%, -55%);
+        filter: blur(2px);
+    }
+
+    100% {
+        filter: blur(0);
+        transform: translate(-50%, -50%);
     }
 }
