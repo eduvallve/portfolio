@@ -1,5 +1,5 @@
 <?php
-// Functions
+    // Functions
 
     function filterProjects($projects) {
         $actualProjects = [];
@@ -91,7 +91,7 @@
         }
     }
 
-// Main code
+    // Main code
     $route = getcwd().'/htdocs/components/projects/projectsRepo';
 
     $projects = filterProjects(scandir($route));

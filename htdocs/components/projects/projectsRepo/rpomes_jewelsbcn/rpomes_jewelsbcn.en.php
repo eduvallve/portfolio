@@ -6,7 +6,7 @@ $description = "<span class='strong'>Context:</span> Jewels Barcelona is a jewer
 <br><br>
 <span class='strong'>Briefing:</span> The artist already had a functional e-commerce, focused in selling jewerly and accessories, but the store required a new and more user-friendly interface design. ";
 
-// $thumbnailImg = "";
+$thumbnailImg = "rpomes_jewelsbcn-mockup-tablet-mobile-1024.png";
 
 // $mobilethumbnailImg = "";
 

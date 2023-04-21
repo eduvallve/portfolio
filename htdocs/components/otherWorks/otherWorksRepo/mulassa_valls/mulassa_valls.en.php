@@ -8,7 +8,7 @@ $description = "Folk element";
 
 // $mobileThumbnailImg = "";
 
-// $bgImg = "";
+$bgImg = "mulassa_valls-thumbnail-100.jpg";
 
 // $bgColor = "";
 
@@ -16,7 +16,7 @@ $description = "Folk element";
 
 // $linkExternal = false;
 
-// $link = '#';
+$link = 'https://www.behance.net/gallery/125135327/Mulassa';
 
 // $linkText = 'See the project';
 

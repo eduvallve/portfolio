@@ -1,4 +1,4 @@
-/* ========== OTHERWORKS STYLES ========== */ /* --- Colors */
+/* ========== OTHERWORKS STYLES ========== */
 .otherWorks {
   background-color: #0c66b9;
   border: 3vw solid white;
@@ -122,6 +122,7 @@
   gap: var(--col-gap);
   text-align: start;
   align-items: center;
+  text-decoration: none;
 }
 @media screen and (max-width: 767px) {
   .otherWorks__list--item:nth-child(even) {
@@ -132,15 +133,36 @@
 @media (min-width: 768px) {
   .otherWorks__list--item {
     align-items: flex-start;
+    opacity: 0.85;
+    transition: 0.25s all;
+    cursor: pointer;
+  }
+  .otherWorks__list--item:hover {
+    opacity: 1;
+  }
+  .otherWorks__list--item:hover .otherWorks__list--item--image {
+    transition: 0.5s all;
+    filter: opacity(1);
+    background-blend-mode: unset;
   }
 }
 .otherWorks__list--item--image {
   min-width: 60px;
   min-height: 60px;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .otherWorks__list--item--image {
+    background-color: #0b65b8;
+    background-blend-mode: luminosity;
+    filter: opacity(0.75);
+  }
 }
 .otherWorks__list--item--content {
   color: white;
   line-height: 1.25em;
+  display: flex;
+  flex-direction: column;
 }
 .otherWorks__list--item--title {
   font-weight: bold;
@@ -213,3 +235,5 @@
     transform: translate(-50%, -50%);
   }
 }
+
+/*# sourceMappingURL=otherWorks.css.php.map */

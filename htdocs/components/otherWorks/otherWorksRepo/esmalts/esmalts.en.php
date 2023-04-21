@@ -8,7 +8,7 @@ $description = "Short video report of an enamel artisan";
 
 // $mobileThumbnailImg = "";
 
-// $bgImg = "";
+$bgImg = "esmalts-thumbnail-100.jpg";
 
 // $bgColor = "";
 

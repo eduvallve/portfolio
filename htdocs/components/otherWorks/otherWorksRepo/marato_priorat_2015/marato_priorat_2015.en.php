@@ -8,7 +8,7 @@ $description = "Advertising spot";
 
 // $mobileThumbnailImg = "";
 
-// $bgImg = "";
+$bgImg = "marato_priorat_2015-thumbnail-100.jpg";
 
 // $bgColor = "";
 

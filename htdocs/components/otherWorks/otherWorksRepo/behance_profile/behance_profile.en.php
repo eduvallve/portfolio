@@ -1,14 +1,14 @@
 <?php
 
-$title = '¡Al rescate!';
+$title = 'My Behance profile';
 
-$description = "3D sculpting for a videogame";
+$description = "View all my 3D projects";
 
 // $thumbnailImg = "";
 
 // $mobileThumbnailImg = "";
 
-$bgImg = "al_rescate-thumbnail-100.jpg";
+$bgImg = "behance-square.svg";
 
 // $bgColor = "";
 
@@ -16,7 +16,7 @@ $bgImg = "al_rescate-thumbnail-100.jpg";
 
 // $linkExternal = false;
 
-$link = '';
+$link = 'https://www.behance.net/eduvallve';
 
 // $linkText = 'See the project';
 

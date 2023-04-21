@@ -8,7 +8,7 @@ $description = "Advertising spot";
 
 // $mobileThumbnailImg = "";
 
-// $bgImg = "";
+$bgImg = "bolado-thumbnail-100.jpg";
 
 // $bgColor = "";
 

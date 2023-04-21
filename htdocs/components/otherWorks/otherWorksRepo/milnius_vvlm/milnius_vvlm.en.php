@@ -8,7 +8,7 @@ $description = "Video report of a catwalk for a fashion brand";
 
 // $mobileThumbnailImg = "";
 
-// $bgImg = "";
+$bgImg = "milnius_vvlm-thumbnail-100.jpg";
 
 // $bgColor = "";
 

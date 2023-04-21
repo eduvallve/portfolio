@@ -1,5 +1,7 @@
 <?php
 
+    include '../../common/utils.php';
+
     /* Functions */
 
     function applyProjectsFilter($filter, $data) {

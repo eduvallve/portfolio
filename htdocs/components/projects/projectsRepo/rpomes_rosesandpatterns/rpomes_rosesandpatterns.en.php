@@ -6,7 +6,7 @@ $description = "<span class='strong'>Context:</span> Roses & Patterns is a creat
 <br><br>
 <span class='strong'>Briefing:</span> Create a visual e-commerce with a user-friendly interface for people who may be interested in buying pattern designs for any kind of fabric.";
 
-// $thumbnailImg = "";
+$thumbnailImg = "rpomes_rosesandpatterns-mockup-tablet-mobile-1024.png";
 
 // $mobilethumbnailImg = "g";
 
