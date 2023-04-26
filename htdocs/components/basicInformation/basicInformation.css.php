@@ -1,4 +1,4 @@
-/* ========== BASICINFORMATION STYLES ========== */ /* --- Colors */
+/* ========== BASICINFORMATION STYLES ========== */ /* Uri of the project */
 .basicInformation {
   position: relative;
 }
@@ -115,7 +115,7 @@
   }
 }
 .basicInformation__bg {
-  background-image: url("/portfolio/uploads/media/bg-002-1200.webp");
+  background-image: url("/lab/portfolio/uploads/media/bg-002-1200.webp");
   background-size: cover;
   background-position: center;
   filter: opacity(0.75) blur(2px);
@@ -150,3 +150,4 @@
   }
 }
 
+/*# sourceMappingURL=basicInformation.css.php.map */

@@ -1,10 +1,10 @@
-/* ========== OTHERWORKS STYLES ========== */
+/* ========== OTHERWORKS STYLES ========== */ /* Uri of the project */
 .otherWorks {
   background-color: #0c66b9;
   border: 3vw solid white;
   min-height: unset;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2705882353);
-  background-image: url("/portfolio/uploads/media/bg-002-1200.png");
+  background-image: url("/lab/portfolio/uploads/media/bg-002-1200.png");
   background-size: cover;
   background-blend-mode: multiply;
 }

@@ -1,10 +1,9 @@
 /* ========== BASICINFORMATION STYLES ========== */
 
 // Utils
+@import '../../common/utils/variables';
 @import '../../common/utils/colors';
 @import '../../common/utils/breakpoints';
-
-$uri: '/portfolio';
 
 .basicInformation {
     position: relative;

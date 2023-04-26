@@ -1,4 +1,4 @@
-/* ========== CONTACT STYLES ========== */ /* --- Colors */
+/* ========== CONTACT STYLES ========== */ /* Uri of the project */
 .contact {
   position: relative;
 }
@@ -70,7 +70,7 @@
   animation: dotWave ease-in-out 2.5s;
 }
 .contact__bg {
-  background-image: url("/portfolio/uploads/media/bg-002-1200.webp");
+  background-image: url("/lab/portfolio/uploads/media/bg-002-1200.webp");
   background-size: cover;
   background-position: center;
   filter: opacity(0.75) blur(2px);
@@ -86,3 +86,5 @@
     filter: opacity(0.25) blur(2px);
   }
 }
+
+/*# sourceMappingURL=contact.css.php.map */

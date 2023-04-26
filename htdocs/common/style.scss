@@ -1,4 +1,5 @@
 /* Utils */
+@import '../common/utils/variables';
 @import '../common/utils/colors';
 @import '../common/utils/breakpoints';
 
@@ -144,27 +145,27 @@ span.strong {
     }
 
     &__linkedin::before {
-        background-image: url(/portfolio/uploads/icons/icon_linkedin.svg);
+        background-image: url(#{$uri}/uploads/icons/icon_linkedin.svg);
     }
 
     &__resumee::before {
-        background-image: url(/portfolio/uploads/icons/icon_document.svg);
+        background-image: url(#{$uri}/uploads/icons/icon_document.svg);
     }
 
     &__graduate::before {
-        background-image: url(/portfolio/uploads/icons/icon_graduate.svg);
+        background-image: url(#{$uri}/uploads/icons/icon_graduate.svg);
     }
 
     &__master::before {
-        background-image: url(/portfolio/uploads/icons/icon_master.svg);
+        background-image: url(#{$uri}/uploads/icons/icon_master.svg);
     }
 
     &__link--external::before {
-        background-image: url(/portfolio/uploads/icons/icon_link-external.svg);
+        background-image: url(#{$uri}/uploads/icons/icon_link-external.svg);
     }
 
     &__greet::before {
-        background-image: url(/portfolio/uploads/icons/icon_greet.svg);
+        background-image: url(#{$uri}/uploads/icons/icon_greet.svg);
         width: 1.2em;
     }
 }
