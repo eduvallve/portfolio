@@ -15,7 +15,7 @@ if ($pageComponents) {
     $pageComp = array_unique($pageComponents);
     foreach ($pageComp as $component) { ?>
         <style type="text/css"><?php
-            include 'htdocs/components/'.$component.'/'.$component.'.css.php';
+            include 'htdocs/components/'.$component.'/'.$component.'.css';
         ?></style>
     <?php }
 }
