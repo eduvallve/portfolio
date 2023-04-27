@@ -1,19 +1,18 @@
-<script type="text/javascript">
 /* Config */
 
-const bi_cfg = {
+const c_cfg = {
     selectors: {
-        component: '.basicInformation',
-        stars: '.basicInformation__animation--stars'
+        component: '.contact',
+        stars: '.contact__animation--stars'
     },
     classes: {
-        star: 'basicInformation__animation--star'
+        star: 'contact__animation--star'
     }
 }
 
 /* Class */
 
-class basicInformation {
+class contact {
     constructor() {
         this.init();
     }
@@ -27,16 +26,16 @@ class basicInformation {
     }
 
     setRefs() {
-        this.base = document.querySelector(bi_cfg.selectors.component);
-        this.stars = this.base.querySelector(bi_cfg.selectors.stars);
+        this.base = document.querySelector(c_cfg.selectors.component);
+        this.stars = this.base.querySelector(c_cfg.selectors.stars);
     }
 
     skyDot() {
-        const id = `bi_star_${Math.floor(Math.random() * 5000)}`;
+        const id = `c_star_${Math.floor(Math.random() * 5000)}`;
         const base = this.stars;
         function freshDot() {
             const obj = document.createElement("div");
-            obj.classList.add(bi_cfg.classes.star);
+            obj.classList.add(c_cfg.classes.star);
             obj.style.left = `calc(100vmax * ${Math.random()})`;
             obj.style.top = `calc(100vmax * ${Math.random()})`;
             const size = Math.floor(2 * Math.random()) + 4;
@@ -54,5 +53,4 @@ class basicInformation {
     }
 }
 
-const BASICINFORMATION = new basicInformation();
-</script>
+const CONTACT = new contact();
