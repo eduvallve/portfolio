@@ -27,4 +27,9 @@ if (!function_exists('str_contains')) {
     }
 }
 
+// Set the path for the root directory.
+$parts  = explode('/', $_SERVER[REQUEST_URI]);
+array_pop($parts);
+$uri = implode('/', $parts);
+
 ?>
