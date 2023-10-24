@@ -1,0 +1,83 @@
+{
+  "al_rescate": {
+    "categories": [
+      "3d-modelling"
+    ],
+    "date": ["2016"],
+    "tags": ["character design", "Degree", "game design", "modelling", "University", "academical"],
+    "highlight": false,
+    "hidden": false
+  },
+  "bolado": {
+    "categories": [
+      "motion-graphics"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  },
+  "esmalts": {
+    "categories": [
+      "motion-graphics"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  },
+  "marato_priorat_2015": {
+    "categories": [
+      "animation-video"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  },
+  "marato_priorat_2016": {
+    "categories": [
+      "animation-video"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  },
+  "milnius_vvlm": {
+    "categories": [
+      "animation-video"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  },
+  "mulassa_valls": {
+    "categories": [
+      "3d-modelling"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  },
+  "vimeo_channel": {
+    "categories": [
+      "motion-graphics"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  },
+  "behance_profile": {
+    "categories": [
+        "3d-modelling"
+    ],
+    "date": [],
+    "tags": [],
+    "highlight": false,
+    "hidden": false
+  }
+}

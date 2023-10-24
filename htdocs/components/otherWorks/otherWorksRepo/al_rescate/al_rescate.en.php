@@ -12,11 +12,11 @@ $bgImg = "al_rescate-thumbnail-100.jpg";
 
 // $bgColor = "";
 
-// $client = "";
+$client = "Universitat Politècnica de Catalunya (UPC)";
 
 // $linkExternal = false;
 
-$link = '';
+$link = '/project.php?id=al_rescate';
 
 // $linkText = 'See the project';
 
